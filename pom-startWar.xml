@@ -166,11 +166,11 @@
         <goal>wget</goal>
       </goals>
       <configuration>
-        <url>https://github.com/glowroot/glowroot/releases/download/v0.11.0/glowroot-0.11.0-dist.zip</url>
+        <url>https://github.com/glowroot/glowroot/releases/download/v0.13.1/glowroot-0.13.1-dist.zip</url>
         <unpack>true</unpack>
-        <outputFileName>glowroot-0.11.0-dist.zip</outputFileName>
+        <outputFileName>glowroot-0.13.1-dist.zip</outputFileName>
         <!-- default target location, just to demonstrate the parameter -->
-        <outputDirectory>${project.build.directory}/glowroot-0.11.0</outputDirectory>
+        <outputDirectory>${project.build.directory}/glowroot-0.13.1</outputDirectory>
       </configuration>
     </execution>
   </executions>
@@ -228,7 +228,7 @@
 			<argument>-classpath</argument>
 		        <classpath />
                         <argument>--illegal-access=warn</argument>
-		        <argument>-javaagent:${project.build.directory}/glowroot-0.11.0/glowroot/glowroot.jar</argument>
+		        <argument>-javaagent:${project.build.directory}/glowroot-0.13.1/glowroot/glowroot.jar</argument>
 			<argument>${profile.specific.arg.01}</argument>
 			<argument>${profile.specific.arg.02}</argument>
 			<argument>${profile.specific.arg.03}</argument>
